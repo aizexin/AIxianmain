@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AIBaseViewController.h
 //  AIxianmain
 //
 //  Created by qianfeng on 15/9/21.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AIBaseViewController : UITabBarController
 
 @end
-

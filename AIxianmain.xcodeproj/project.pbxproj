@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BC5D385E1BB02BEA008A9C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D385D1BB02BEA008A9C14 /* main.m */; };
 		BC5D38611BB02BEA008A9C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D38601BB02BEA008A9C14 /* AppDelegate.m */; };
-		BC5D38641BB02BEA008A9C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D38631BB02BEA008A9C14 /* ViewController.m */; };
 		BC5D38671BB02BEA008A9C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D38651BB02BEA008A9C14 /* Main.storyboard */; };
 		BC5D38691BB02BEA008A9C14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5D38681BB02BEA008A9C14 /* Images.xcassets */; };
 		BC5D386C1BB02BEA008A9C14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5D386A1BB02BEA008A9C14 /* LaunchScreen.xib */; };
 		BC5D38781BB02BEA008A9C14 /* AIxianmainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D38771BB02BEA008A9C14 /* AIxianmainTests.m */; };
+		BC5D388A1BB02E25008A9C14 /* AIFreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D38891BB02E25008A9C14 /* AIFreeController.m */; };
+		BC70F9A11BB031DD00117EC3 /* AIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC70F9A01BB031DD00117EC3 /* AIBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +31,19 @@
 		BC5D38581BB02BEA008A9C14 /* AIxianmain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIxianmain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5D385C1BB02BEA008A9C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5D385D1BB02BEA008A9C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BC5D385F1BB02BEA008A9C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BC5D38601BB02BEA008A9C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC5D38621BB02BEA008A9C14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC5D38631BB02BEA008A9C14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC5D385F1BB02BEA008A9C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		BC5D38601BB02BEA008A9C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		BC5D38661BB02BEA008A9C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC5D38681BB02BEA008A9C14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC5D386B1BB02BEA008A9C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BC5D38711BB02BEA008A9C14 /* AIxianmainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIxianmainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5D38761BB02BEA008A9C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5D38771BB02BEA008A9C14 /* AIxianmainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIxianmainTests.m; sourceTree = "<group>"; };
+		BC5D38881BB02E25008A9C14 /* AIFreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFreeController.h; sourceTree = "<group>"; };
+		BC5D38891BB02E25008A9C14 /* AIFreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFreeController.m; sourceTree = "<group>"; };
+		BC5D388F1BB02EC9008A9C14 /* AIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIDefine.h; sourceTree = "<group>"; };
+		BC70F99F1BB031DD00117EC3 /* AIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBaseViewController.h; sourceTree = "<group>"; };
+		BC70F9A01BB031DD00117EC3 /* AIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +85,11 @@
 		BC5D385A1BB02BEA008A9C14 /* AIxianmain */ = {
 			isa = PBXGroup;
 			children = (
-				BC5D385F1BB02BEA008A9C14 /* AppDelegate.h */,
-				BC5D38601BB02BEA008A9C14 /* AppDelegate.m */,
-				BC5D38621BB02BEA008A9C14 /* ViewController.h */,
-				BC5D38631BB02BEA008A9C14 /* ViewController.m */,
+				BC70F99E1BB031C800117EC3 /* Base */,
+				BC5D38871BB02C77008A9C14 /* Other */,
+				BC5D38811BB02C62008A9C14 /* Free */,
 				BC5D38651BB02BEA008A9C14 /* Main.storyboard */,
 				BC5D38681BB02BEA008A9C14 /* Images.xcassets */,
-				BC5D386A1BB02BEA008A9C14 /* LaunchScreen.xib */,
 				BC5D385B1BB02BEA008A9C14 /* Supporting Files */,
 			);
 			path = AIxianmain;
@@ -96,6 +98,7 @@
 		BC5D385B1BB02BEA008A9C14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC5D386A1BB02BEA008A9C14 /* LaunchScreen.xib */,
 				BC5D385C1BB02BEA008A9C14 /* Info.plist */,
 				BC5D385D1BB02BEA008A9C14 /* main.m */,
 			);
@@ -117,6 +120,74 @@
 				BC5D38761BB02BEA008A9C14 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC5D38811BB02C62008A9C14 /* Free */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D38821BB02C62008A9C14 /* Controller */,
+				BC5D38831BB02C62008A9C14 /* Libs */,
+				BC5D38841BB02C62008A9C14 /* Model */,
+				BC5D38851BB02C62008A9C14 /* Other */,
+				BC5D38861BB02C62008A9C14 /* VIew */,
+			);
+			path = Free;
+			sourceTree = "<group>";
+		};
+		BC5D38821BB02C62008A9C14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D38881BB02E25008A9C14 /* AIFreeController.h */,
+				BC5D38891BB02E25008A9C14 /* AIFreeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC5D38831BB02C62008A9C14 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		BC5D38841BB02C62008A9C14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC5D38851BB02C62008A9C14 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BC5D38861BB02C62008A9C14 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		BC5D38871BB02C77008A9C14 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BC5D388F1BB02EC9008A9C14 /* AIDefine.h */,
+				BC5D385F1BB02BEA008A9C14 /* AppDelegate.h */,
+				BC5D38601BB02BEA008A9C14 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BC70F99E1BB031C800117EC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BC70F99F1BB031DD00117EC3 /* AIBaseViewController.h */,
+				BC70F9A01BB031DD00117EC3 /* AIBaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5D38641BB02BEA008A9C14 /* ViewController.m in Sources */,
 				BC5D38611BB02BEA008A9C14 /* AppDelegate.m in Sources */,
+				BC70F9A11BB031DD00117EC3 /* AIBaseViewController.m in Sources */,
+				BC5D388A1BB02E25008A9C14 /* AIFreeController.m in Sources */,
 				BC5D385E1BB02BEA008A9C14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +490,7 @@
 				BC5D387D1BB02BEA008A9C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC5D387E1BB02BEA008A9C14 /* Build configuration list for PBXNativeTarget "AIxianmainTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +499,7 @@
 				BC5D38801BB02BEA008A9C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
