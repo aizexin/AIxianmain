@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3h0-jR-v5R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3h0-jR-v5R">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Base View Controller-->
         <scene sceneID="9V0-DU-IlD">
             <objects>
-                <tabBarController id="3h0-jR-v5R" sceneMemberID="viewController">
+                <tabBarController id="3h0-jR-v5R" customClass="AIBaseViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="s1e-Ob-YJf">
@@ -25,9 +25,9 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1b-BU-bNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1392.5" y="-524.5"/>
+            <point key="canvasLocation" x="-1285.5" y="-590.5"/>
         </scene>
-        <!--Root View Controller-->
+        <!--降价-->
         <scene sceneID="gaE-2i-nCK">
             <objects>
                 <tableViewController id="GNI-te-MkQ" sceneMemberID="viewController">
@@ -48,14 +48,14 @@
                             <outlet property="delegate" destination="GNI-te-MkQ" id="MES-Oa-iIs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="8yr-pz-p12"/>
+                    <navigationItem key="navigationItem" title="降价" id="8yr-pz-p12"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4u-VT-MIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-322.5" y="-747.5"/>
         </scene>
-        <!--Root View Controller-->
+        <!--免费-->
         <scene sceneID="AOz-MG-rWz">
             <objects>
                 <tableViewController id="Qoi-f0-MR6" sceneMemberID="viewController">
@@ -76,18 +76,18 @@
                             <outlet property="delegate" destination="Qoi-f0-MR6" id="sTp-eX-SB5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="spA-TL-lze"/>
+                    <navigationItem key="navigationItem" title="免费" id="spA-TL-lze"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aqq-7I-3c2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-302.5" y="-8.5"/>
         </scene>
-        <!--Item-->
+        <!--免费-->
         <scene sceneID="RYL-44-hd5">
             <objects>
-                <navigationController id="tbx-vj-tjf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KrS-r5-2X9"/>
+                <navigationController id="tbx-vj-tjf" customClass="AIBaseNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="免费" id="KrS-r5-2X9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fKj-PN-8uV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="-771.5" y="-3.5"/>
         </scene>
-        <!--Root View Controller-->
+        <!--专题-->
         <scene sceneID="zcP-89-oml">
             <objects>
                 <tableViewController id="p8L-hS-Yhe" sceneMemberID="viewController">
@@ -122,14 +122,14 @@
                             <outlet property="delegate" destination="p8L-hS-Yhe" id="2eJ-ao-Yoa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="gM9-43-ViB"/>
+                    <navigationItem key="navigationItem" title="专题" id="gM9-43-ViB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w4-r4-cFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-286.5" y="796.5"/>
         </scene>
-        <!--Root View Controller-->
+        <!--热榜-->
         <scene sceneID="91I-Eg-TpH">
             <objects>
                 <tableViewController id="XSn-Pg-XBT" sceneMemberID="viewController">
@@ -150,18 +150,18 @@
                             <outlet property="delegate" destination="XSn-Pg-XBT" id="bAu-uR-FFy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vx3-Wf-4OG"/>
+                    <navigationItem key="navigationItem" title="热榜" id="vx3-Wf-4OG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMq-g3-mv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234.5" y="1500.5"/>
+            <point key="canvasLocation" x="-286.5" y="1528.5"/>
         </scene>
-        <!--Item-->
+        <!--热榜-->
         <scene sceneID="Uze-1b-fgp">
             <objects>
-                <navigationController id="QO8-Bc-DCh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MfJ-fc-zb4"/>
+                <navigationController id="QO8-Bc-DCh" customClass="AIBaseNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="热榜" id="MfJ-fc-zb4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="83L-Xc-pMz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -175,11 +175,11 @@
             </objects>
             <point key="canvasLocation" x="-743.5" y="1528.5"/>
         </scene>
-        <!--Item-->
+        <!--专题-->
         <scene sceneID="Uoq-MM-Dou">
             <objects>
-                <navigationController id="2um-PU-opE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4bK-tE-UHw"/>
+                <navigationController id="2um-PU-opE" customClass="AIBaseNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="专题" id="4bK-tE-UHw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eVw-39-g6X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -193,11 +193,11 @@
             </objects>
             <point key="canvasLocation" x="-755.5" y="788.5"/>
         </scene>
-        <!--Item-->
+        <!--降价-->
         <scene sceneID="YnH-9W-ebQ">
             <objects>
-                <navigationController id="TDZ-qv-Z0F" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VG9-3f-QRh"/>
+                <navigationController id="TDZ-qv-Z0F" customClass="AIBaseNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="降价" id="VG9-3f-QRh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w2B-dU-LRg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -211,7 +211,7 @@
             </objects>
             <point key="canvasLocation" x="-778.5" y="-747.5"/>
         </scene>
-        <!--Root View Controller-->
+        <!--限免-->
         <scene sceneID="lb7-p0-mOR">
             <objects>
                 <tableViewController id="Lbw-Lk-jZf" customClass="AIFreeController" sceneMemberID="viewController">
@@ -232,18 +232,18 @@
                             <outlet property="delegate" destination="Lbw-Lk-jZf" id="5k5-AY-fL9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="LuI-w4-33I"/>
+                    <navigationItem key="navigationItem" title="限免" id="LuI-w4-33I"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYP-ik-RVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-356.5" y="-1597.5"/>
         </scene>
-        <!--Item-->
+        <!--限免-->
         <scene sceneID="gzf-JY-tCf">
             <objects>
-                <navigationController id="VJZ-sL-YAy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p3v-w2-on8"/>
+                <navigationController id="VJZ-sL-YAy" customClass="AIBaseNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="限免" id="p3v-w2-on8"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="edv-AR-Tvv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

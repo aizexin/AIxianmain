@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4536DC571BB044AA0058479E /* AITabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536DC561BB044AA0058479E /* AITabBar.m */; };
+		4536DC5A1BB045380058479E /* AITabBarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536DC591BB045380058479E /* AITabBarBtn.m */; };
+		45AFBADD1BB05C4F00D7EE12 /* AIBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFBADC1BB05C4F00D7EE12 /* AIBaseNavController.m */; };
 		BC5D385E1BB02BEA008A9C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D385D1BB02BEA008A9C14 /* main.m */; };
 		BC5D38611BB02BEA008A9C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D38601BB02BEA008A9C14 /* AppDelegate.m */; };
 		BC5D38671BB02BEA008A9C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5D38651BB02BEA008A9C14 /* Main.storyboard */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4536DC551BB044AA0058479E /* AITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITabBar.h; sourceTree = "<group>"; };
+		4536DC561BB044AA0058479E /* AITabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITabBar.m; sourceTree = "<group>"; };
+		4536DC581BB045380058479E /* AITabBarBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITabBarBtn.h; sourceTree = "<group>"; };
+		4536DC591BB045380058479E /* AITabBarBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITabBarBtn.m; sourceTree = "<group>"; };
+		45AFBADB1BB05C4F00D7EE12 /* AIBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBaseNavController.h; sourceTree = "<group>"; };
+		45AFBADC1BB05C4F00D7EE12 /* AIBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBaseNavController.m; sourceTree = "<group>"; };
 		BC5D38581BB02BEA008A9C14 /* AIxianmain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIxianmain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5D385C1BB02BEA008A9C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5D385D1BB02BEA008A9C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45AFBAD91BB04BFA00D7EE12 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4536DC581BB045380058479E /* AITabBarBtn.h */,
+				4536DC591BB045380058479E /* AITabBarBtn.m */,
+				4536DC551BB044AA0058479E /* AITabBar.h */,
+				4536DC561BB044AA0058479E /* AITabBar.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		45AFBADA1BB04C1000D7EE12 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC70F99F1BB031DD00117EC3 /* AIBaseViewController.h */,
+				BC70F9A01BB031DD00117EC3 /* AIBaseViewController.m */,
+				45AFBADB1BB05C4F00D7EE12 /* AIBaseNavController.h */,
+				45AFBADC1BB05C4F00D7EE12 /* AIBaseNavController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		BC5D384F1BB02BEA008A9C14 = {
 			isa = PBXGroup;
 			children = (
@@ -184,8 +215,8 @@
 		BC70F99E1BB031C800117EC3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				BC70F99F1BB031DD00117EC3 /* AIBaseViewController.h */,
-				BC70F9A01BB031DD00117EC3 /* AIBaseViewController.m */,
+				45AFBADA1BB04C1000D7EE12 /* controller */,
+				45AFBAD91BB04BFA00D7EE12 /* view */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -290,8 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4536DC5A1BB045380058479E /* AITabBarBtn.m in Sources */,
+				45AFBADD1BB05C4F00D7EE12 /* AIBaseNavController.m in Sources */,
 				BC5D38611BB02BEA008A9C14 /* AppDelegate.m in Sources */,
 				BC70F9A11BB031DD00117EC3 /* AIBaseViewController.m in Sources */,
+				4536DC571BB044AA0058479E /* AITabBar.m in Sources */,
 				BC5D388A1BB02E25008A9C14 /* AIFreeController.m in Sources */,
 				BC5D385E1BB02BEA008A9C14 /* main.m in Sources */,
 			);
