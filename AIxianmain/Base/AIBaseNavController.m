@@ -24,7 +24,7 @@
     [navBar setTintColor:[UIColor whiteColor]];
     //1.2设置所有导航条的标题颜色
     NSMutableDictionary *md = [NSMutableDictionary dictionary];
-    md[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    md[NSFontAttributeName] = TitleFont;
     md[NSForegroundColorAttributeName] = TitleColor;
     [navBar setTitleTextAttributes:md];
     
