@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>732D6B45-D72A-439A-81C0-3C49876B9400</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>AIxianmain</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B9B239437FE6FBF2261BFDC56B554884AF075C04</key>
 		<string>https://github.com/aizexin/AIxianmain.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AIxianmain.xcodeproj/project.xcworkspace</string>
+	<string>AIxianmain.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B9B239437FE6FBF2261BFDC56B554884AF075C04</key>

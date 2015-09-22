@@ -18,7 +18,7 @@
 /**
  *  产品图标
  */
-@property (strong, nonatomic) IBOutlet UIImageView *productImageV;
+@property (strong, nonatomic) IBOutlet UIImageView *appIconImageV;
 /**
  *  名字
  */
@@ -39,6 +39,18 @@
  *  种类
  */
 @property (strong, nonatomic) IBOutlet UILabel *appCategoryLabel;
+/**
+ *  分享次数
+ */
+@property (weak, nonatomic) IBOutlet UILabel *appShareNumLabel;
+/**
+ *  收藏次数
+ */
+@property (weak, nonatomic) IBOutlet UILabel *appCollectNumLabel;
+/**
+ *  下载次数
+ */
+@property (weak, nonatomic) IBOutlet UILabel *appDownNumLabel;
 
 @property(nonatomic,strong)AIFreeAppCellModel *data;
 @end

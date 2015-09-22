@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AIFreeAppCellModel : UIView
+@interface AIFreeAppCellModel : UIView{
+    NSString *_description;
+}
 
 /**
  *  appid
@@ -29,7 +31,7 @@
 /**
  *  描述
  */
-@property(nonatomic,copy)NSString *description;
+//@property(nonatomic,copy)NSString *_description;
 /**
  *  下载次数
  */

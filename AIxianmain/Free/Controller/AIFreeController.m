@@ -8,6 +8,9 @@
 
 #import "AIFreeController.h"
 #import "AIFreeAppCellView.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "AIDefine.h"
+#import "AIFreeAppCellModel.h"
 @interface AIFreeController ()
 @property(nonatomic,strong)NSMutableArray *dataSource;
 @end
@@ -23,13 +26,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self requestData];
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -加载数据
+-(void)requestData{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
+    [manager GET:FreePath parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (_dataSource.count > 0) {
+            [_dataSource removeAllObjects];
+        }
+        NSArray *applications = responseObject[@"applications"];
+        for (NSDictionary *itemDict in applications) {
+            AIFreeAppCellModel *model = [AIFreeAppCellModel freeAppCellModelWithDict:itemDict];
+            [_dataSource addObject:model];
+        }
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        AILog(@"%@",error.description);
+    }];
 }
 
 #pragma mark - Table view data source
