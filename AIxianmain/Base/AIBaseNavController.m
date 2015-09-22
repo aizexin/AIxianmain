@@ -21,7 +21,7 @@
     //1.1设置导航栏背景图
     [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbar"] forBarMetrics:(UIBarMetricsDefault)];
     //设置导航栏返回按钮的图片的颜色
-    [navBar setTintColor:[UIColor whiteColor]];
+    [navBar setTintColor:[UIColor blackColor]];
     //1.2设置所有导航条的标题颜色
     NSMutableDictionary *md = [NSMutableDictionary dictionary];
     md[NSFontAttributeName] = TitleFont;
