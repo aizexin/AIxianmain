@@ -25,6 +25,9 @@
     for (int i = 0; i < self.viewControllers.count; i++) {
         [tabBar addTabBarButtonWithImageName:norImageArray[i] andDisableImageName:selImageArray[i]];
     }
+
+    self.selectedIndex = 0;
+   
     //添加到自带的tabBar上
     [self.tabBar addSubview:tabBar];
     

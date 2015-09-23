@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class AITabBarBtn;
 @protocol AITabBarDelegate <NSObject>
 
 -(void)tabBarDidSelectBtnFrom:(NSInteger)from to:(NSInteger)to;

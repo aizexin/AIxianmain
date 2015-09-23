@@ -37,6 +37,7 @@
 		BCBB074A1BB2484A004492D5 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB07371BB2484A004492D5 /* UIProgressView+AFNetworking.m */; };
 		BCBB074B1BB2484A004492D5 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB07391BB2484A004492D5 /* UIRefreshControl+AFNetworking.m */; };
 		BCBB074C1BB2484A004492D5 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB073B1BB2484A004492D5 /* UIWebView+AFNetworking.m */; };
+		BCBB074F1BB2757C004492D5 /* AIDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBB074E1BB2757C004492D5 /* AIDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		BCBB07391BB2484A004492D5 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		BCBB073A1BB2484A004492D5 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		BCBB073B1BB2484A004492D5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		BCBB074D1BB2757C004492D5 /* AIDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDetailController.h; sourceTree = "<group>"; };
+		BCBB074E1BB2757C004492D5 /* AIDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,8 @@
 			children = (
 				BC5D38881BB02E25008A9C14 /* AIFreeController.h */,
 				BC5D38891BB02E25008A9C14 /* AIFreeController.m */,
+				BCBB074D1BB2757C004492D5 /* AIDetailController.h */,
+				BCBB074E1BB2757C004492D5 /* AIDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 				BCBB07471BB2484A004492D5 /* UIAlertView+AFNetworking.m in Sources */,
 				BCBB07421BB2484A004492D5 /* AFURLRequestSerialization.m in Sources */,
 				45AFBADD1BB05C4F00D7EE12 /* AIBaseNavController.m in Sources */,
+				BCBB074F1BB2757C004492D5 /* AIDetailController.m in Sources */,
 				BCBB07441BB2484A004492D5 /* AFURLSessionManager.m in Sources */,
 				BC5D38611BB02BEA008A9C14 /* AppDelegate.m in Sources */,
 				BCBB073D1BB2484A004492D5 /* AFHTTPRequestOperationManager.m in Sources */,
