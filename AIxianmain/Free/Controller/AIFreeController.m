@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.rowHeight = 100;
     [self requestData];
 
 }
@@ -62,6 +63,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AIFreeAppCellView *cell = [tableView dequeueReusableCellWithIdentifier:@"freeAppCell"];
+    if (indexPath.row % 2 == 1) {
+        cell.appbgImageV.image = [UIImage imageNamed:@"cate_list_bg1"];
+    }else{
+        cell.appbgImageV.image = [UIImage imageNamed:@"cate_list_bg2"];
+    }
     cell.data = self.dataSource[indexPath.row];
     
     return cell;
